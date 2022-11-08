@@ -20,4 +20,6 @@ nvm install 16.0.0
 
 npm install
 
-node index.js
+npm i pm2 -g
+
+pm2 start index.js
