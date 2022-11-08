@@ -10,11 +10,7 @@ const result = dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors({
-    origin: "*",
-    method: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-}));
+app.use(cors());
 
 const loginRouter = require('./routes/login');
 const hrRouter = require("./routes/hr");
