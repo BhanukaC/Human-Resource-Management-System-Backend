@@ -4,12 +4,12 @@ const nodemailer = require("nodemailer");
 
 // create reusable transporter object using the default SMTP transport
 module.exports = nodemailer.createTransport({
-    host: process.env.HOSTEMAIL,
-    port: process.env.EMAILPORT,
+    host: "mail.codewithx.com",
+    port: 465,
     // secure: true, // true for 465, false for other ports
     auth: {
-        user: process.env.EMAILUSERNAME, // generated ethereal user
-        pass: process.env.EMAILUSERPASSWORD, // generated ethereal password
+        user: "hr@codewithx.com", // generated ethereal user
+        pass: "OeVUM@Znj&rZ", // generated ethereal password
     },
 });
 
